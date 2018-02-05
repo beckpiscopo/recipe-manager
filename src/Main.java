@@ -1,20 +1,14 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 import java.util.Scanner; 
 
 public class Main {
     
     private static Scanner keyboard = new Scanner(System.in);
-    
+
     public static void Main(String args[]) {
-        
-        boolean quit = false;
+
         printActions();
 
-        while(!quit) {
             System.out.println("\nEnter action (4 to print options):");
             int action = keyboard.nextInt();
             keyboard.nextLine();
@@ -24,7 +18,7 @@ public class Main {
                     addNewIngredient();
                     break;
                 case 2:
-                    removeIngredient();
+                   removeIngredient();
                    break;
                 case 3:
                     printIngredients();
@@ -35,7 +29,7 @@ public class Main {
 
             }
         }
-    }
+    
     
     
         private static void addNewIngredient() {
