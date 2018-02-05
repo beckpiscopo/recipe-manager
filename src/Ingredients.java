@@ -19,18 +19,22 @@ public class Ingredients {
         this.unitType = unitType; 
         this.unitSize = unitSize;
     }   
-    //public getIngredientName() { 
-       // return ingredientName;
-    //}
+    public String getIngredientName() { 
+        return ingredientName;
+    }
     
-    //public getunitType() {
-      //  return unitType;
-   // }
+    public String getunitType() {
+      return unitType;
+    }
     
-    
-   // public getunitSize() {
-       // return unitSize;
-    //}
+  
+   public Double getunitSize() {
+       return unitSize;
+    }
+   
+      public void setIngredientName(String ingredientName) { 
+            this.ingredientName = ingredientName; 
+    }  
     
     public static Ingredients createIngredient(String ingredientName, String unitType, double unitSize) {
         return new Ingredients(ingredientName, unitType, unitSize);
