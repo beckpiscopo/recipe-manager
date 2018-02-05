@@ -8,9 +8,31 @@
  *
  * @author brittanybeckett-harrison
  */
-public class Ingredients {
+
+public class Ingredients { 
     String ingredientName;
     String unitType;
     double unitSize; 
     
+    public Ingredients(String ingredientName, String unitType, double unitSize) {
+        this.ingredientName = ingredientName; 
+        this.unitType = unitType; 
+        this.unitSize = unitSize;
+    }   
+    //public getIngredientName() { 
+       // return ingredientName;
+    //}
+    
+    //public getunitType() {
+      //  return unitType;
+   // }
+    
+    
+   // public getunitSize() {
+       // return unitSize;
+    //}
+    
+    public static Ingredients createIngredient(String ingredientName, String unitType, double unitSize) {
+        return new Ingredients(ingredientName, unitType, unitSize);
+    }
 }
