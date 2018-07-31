@@ -1,3 +1,5 @@
+package recipemanager;
+
 
 public class Ingredient {
     String name;
